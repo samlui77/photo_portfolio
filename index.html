@@ -5,42 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sam's Photography</title>
-    <link rel="stylesheet" href="./css/style2.css?v=2">
+    <link rel="stylesheet" href="./css/style.css?v=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet"> -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/angular-lightbox.css">
 </head>
 <body>
    <header class="primary-header">
       <div class="logo">Sam Photography</div> 
-      <!-- <div class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
+      <div class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
         <span class="line1"></span>
         <span class="line2"></span>
         <span class="line3"></span>
-      </div> -->
-      <nav>
-        <ul id="primary-navigation" showMenu="false" class="primary-navigation" >
-          <li class="active">
-             <a href="#index">
-               <span aria-hidden="true">f1.2</span>Home
-             </a>
-          </li>
-          <li>
-            <a href="#Portfolio">
-              <span aria-hidden="true">f2.8</span>Portfolio
-            </a>
-          </li>
-          <li>
-            <a href="#about">
-              <span aria-hidden="true">f5.6</span>About
-            </a>
-          </li>
-        </ul>
-      </nav> 
+      </div>
+      
   </header>
- 
+  <nav>
+    <ul id="primary-navigation" showMenu="false" class="primary-navigation" >
+      <li class="active">
+         <a href="#">
+           <span aria-hidden="true">f1.2</span>Home
+         </a>
+      </li>
+      <li>
+        <a href="#Portfolio">
+          <span aria-hidden="true">f2.8</span>Portfolio
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <span aria-hidden="true">f5.6</span>About
+        </a>
+      </li>
+    </ul>
+  </nav> 
+  <main id="mainContent">
+  <!-- Welcome Container-->
+  <div class="welcomeContainer">
+        <h2 class="welcome"><span>W</span>elcome</h2>
+        <h1 class="welcomeTitle">Sam Photography</h1>
+        <div class="welcomeDesc">
+          <div class="separator">
+            <div class="line line-left"></div>
+            <div class="asterisk"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+              <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+            </svg></div>
+            <div class="line line-right"></div>
+          </div>
+          <div class="singleAnimation">
+            <h5>Aperture+Shutter Speed+ISO</h5>
+          </div>
+        </div>
+  </div>
+  <!-- End Welcome Container-->
   <!-- Slide Control-->
     <div id="carouselContainer" class="carousel slide  carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
       <div class="carousel-indicators">
@@ -50,13 +70,6 @@
         <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="9000">
-          <img src="./photos/IMG_4113.jpg" class="d-block mx-auto" alt="...">
-          <!-- <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div> -->
-        </div>
         <div class="carousel-item" data-bs-interval="9000">
           <img src="./photos/3.jpg" class="d-block mx-auto" alt="...">
           <!-- <div class="carousel-caption d-none d-md-block">
@@ -65,7 +78,7 @@
           </div> -->
         </div>
         <div class="carousel-item" data-bs-interval="9000">
-          <img src="./photos/NZ6_0608.jpg" class="d-block mx-auto" alt="...">
+          <img src="./photos/NZ6_0456.jpg" class="d-block mx-auto" alt="...">
           <!-- <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
@@ -76,6 +89,14 @@
           <!-- <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
+          </div> -->
+        </div>
+        <div class="carousel-item active" data-bs-interval="9000">
+          <img src="./photos/IMG_5320.jpg" class="d-block mx-auto" alt="...">
+          
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div> -->
         </div>
         
@@ -90,17 +111,259 @@
       </button>
     </div> 
   <!--End Slide Control-->
- 
+
+  </main>
+  <!-- Start porfolio-->
+  <section class="portfolio" id="Portfolio">
+    <div class="sectionContainer">
+      <div class="photoType">
+        <div class="photoDesc padding-right animate-left">
+          <div class="titles">
+            <h2 class="subTitle"><span>D</span>iscover</h2>
+            <h1 class="subTitleDetails">My Portfolio</h1>
+          </div>
+          <p>
+              I love different types of photography, such as Still Life, Landscape, Sports, Portrait, Wedding, Fine Art, Concert etc.
+              Although I am only a semi-professional photographer, I am glad that I have had the chance to shoot in a professional studio, 
+              and there are also some satisfactory works.          
+          </p>
+          <a href="#gallery">About</a>
+        </div>
+        <div class="photoTypeInfo animate-right">
+          <div class="imageGroup">
+            <img src="photos/R0000733.jpg"  alt="">
+            <img src="photos/IMG_8327.JPG" alt="">
+            <img src="photos/DSCF1348.jpg" alt="">
+            <img src="photos/R0000485.jpg" alt="">
+            <img src="photos/DSCF1811.jpg" alt="">
+            <img src="photos/NZ6_0608.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End portfolio-->
+  <section class="my-gallery between" id="gallery">
+    <div class="sectionContainer">
+      <div class="titles">
+        <h2 class="subTitle"><span>M</span>y</h2>
+        <h1 class="subTitleDetails" style="color:#fff">Photo Gallery</h1>
+      </div>
+    </div>
+  </section> 
+  <!-- Discover -->
+  <section class="discoverPhoto">
+    <div class="sectionContainer">
+      <div class="photoInfo" >
+     <!-- <div class="imageGroup padding-right animate-left" ng-app="DemoApp"  ng-controller="DemoController">  -->
+      <!-- <div class="imageGroup padding-right animate-left" ng-app="galleryDataApp"  ng-controller="galleryCtrl">
+      <ul >
+        <li ng-repeat="image in images" lightbox="images">
+          <a ng-href="{{ image }}" class="lightbox-trigger">
+             {{ image }}
+           <img ng-src="{{ image }}" alt="" class="img-fluid">
+          </a>
+        </li>
+      </ul>
+      </div> -->
+      <div class="imageGroup padding-right animate-left" ng-app="galleryDataApp" ng-controller="galleryCtrl"> 
+        <div class="contain" ng-repeat="image in images" lightbox="images">
+          <a ng-href="{{image}}" class="lightbox-trigger" >
+              <img ng-src="{{image}}" alt="" > 
+            <!-- {{image}} -->
+          </a>
+        </div> 
+      </div> 
+      
+      <!-- <div class="imageGroup padding-right animate-left" ng-app="galleryDataApp" ng-controller="galleryCtrl"> 
+        <div class="column" ng-repeat="i in items" >
+          <a  class="photoLightBox" ng-href="{{p.path}}" data-toggle="lightbox" data-gallery="photogallery" data-caption="Concert" ng-repeat="p in i.columns">
+              <img ng-src="{{p.path}}" alt="" class="img-fluid">
+            {{p.path}}
+          </a>
+        </div> 
+      </div> -->
+
+        
+          <!-- <div class="column">
+            <a href="photos/1.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/1.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_5841.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_5841.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF6988.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF6988.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF1329.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF1329.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF1096.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF1096.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+
+          <div class="column">
+            <a href="photos/3.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/3.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF7916.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF7916.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/R0000485.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/R0000485.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/NZ6_0646.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/NZ6_0646.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF2858.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF2858.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF1008.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF1008.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF1321.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF1321.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="column">
+            <a href="photos/DSC_5510.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSC_5510.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSC_5514.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSC_5514.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/NZ6_0135.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/NZ6_0135.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/NZ6_0646.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/NZ6_0646.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/NZ6_0544.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/NZ6_0544.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_2174.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_2174.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="column">
+            <a href="photos/DSC_0856.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSC_0856.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSC_5428.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSC_5428.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_8326.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_8326.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_8325.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_8325.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSCF0669.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSCF0669.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_8322.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_8322.jpg" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div class="column">
+            <a href="photos/2.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/2.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/DSC_5136.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/DSC_5136.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/Silhouette.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/Silhouette.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_8325.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_8325.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_8324.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_8324.jpg" alt="" class="img-fluid">
+            </a>
+            <a href="photos/IMG_0442.jpg" data-toggle="lightbox" data-gallery="photoGallery" data-caption="Concert">
+              <img src="photos/IMG_0442.jpg" alt="" class="img-fluid">
+            </a>
+          </div> -->
+      </div>
+      <!-- <div class="photoDesc animate-right">
+          <div class="titles">
+              <h2 class="subTitle"><span>D</span>iscover</h2>
+              <h1 class="subTitleDetails">Photos</h1>
+          </div>
+      </div> -->
+    </div>
+  </section>
+  <footer id="about">
+    <div class="footContainer">
+        <div class="back2Top">
+          <a href="#mainContent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="footerContent"  >
+          <div class="footContentAbout animate-up">
+            <h4>About Sam</h4>
+            <div class="camera"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+              <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+              <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+            </svg></div>
+            <div class="container">
+                <div class="left">
+                    <p>
+                      I'm a software developer. Besides development, I also like photography. 
+                      It is because i can capturing moments, memories and emotions through photography. 
+                      And I have been taking many photography fundamentals courses. 
+                    </p>
+                    <p>
+                      Until 2017, I enrolled for a professional diploma in commercial photography.
+                      It took me two years to complete the whole course and gained a lot of photography knowledge and new friends.
+                      And I found that photography and software development are similar in many ways, 
+                      each time you have to prepare enough and have a strong problem-solving ability to get good photo.
+                    </p>
+                    <p>But don't ask me what is Inverse Square Law, frequency separation etc. :)
+                       <BR/>I hate theoretical people. Try more! Try and Error.
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="imgContainer">
+                        <img src="photos/Me.jpg" alt=""/> 
+                    </div>
+                </div>
+            </div>
+            <div class="footerContentDivider animate-bottom">
+                <h4>Copyright &copy; 2022 Sam Lui. All Rights Reserved.</h4>
+           </div>
+        </div>
+    
+    </div>
+
+  </footer>
  <!--End Discover-->
 
 <script src="./js/bootstrap.min.js"></script>    
 <!-- <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.8/dist/index.bundle.min.js"></script> -->
 <script src="./js/jquery.min.js"></script>  
-
+<!-- <script src="./js/scrollreveal.min.js"></script> -->
+<!-- <script src="./js/angular.min.js"></script>   -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>  
+<script src="./js/angular-lightbox.js?v=2"></script>
 <script src="./js/menu.js?v=2"></script> 
-
+<!-- <script src="./js/test.js?v=2"></script>  -->
 <script>
+  // $.noConflict();
+  //  jQuery( document ).ready(function( $ ) {
+  //   alert(document.querySelectorAll('.slightbox').innerHTML);
+  //       // document.querySelectorAll('.lightbox').forEach((el) => el.addEventListener('click', (e) => {
+  //       //   alert("AAAA")
+  //       //  e.preventDefault();
+  //       //   const lightbox = new Lightbox(el);
+  //       //   lightbox.show();
+  //         //}));
+  //   });
 
 
   $('.hamburger').click(function(){
@@ -113,6 +376,58 @@
       $(this).addClass('active');
     }
   });
+
+
+
+var dataPage = "./data/photos.json?v=2";
+    //   var app = angular.module('DemoApp', ['angular-lightbox']);
+    // app.controller('DemoController', function($scope) {
+   
+    //      $scope.images = ['photos/1.jpg', 'photos/IMG_5841.jpg', 'photos/DSCF6988.jpg', 'photos/DSCF1329.jpg', 'photos/DSCF1096.jpg', 'photos/3.jpg', 'photos/DSCF7916.jpg', 'photos/R0000485.jpg', 'photos/NZ6_0646.jpg', 'photos/DSCF2858.jpg', 'photos/DSCF1008.jpg', 'photos/DSCF1321.jpg', 'photos/DSC_5510.jpg', 'photos/DSC_5514.jpg', 'photos/NZ6_0135.jpg', 'photos/NZ6_0544.jpg', 'photos/IMG_2174.jpg', 'photos/DSC_0856.jpg', 'photos/DSC_5428.jpg', 'photos/IMG_8326.jpg', 'photos/IMG_8325.jpg', 'photos/DSCF0669.jpg', 'photos/IMG_8322.jpg', 'photos/2.jpg', 'photos/DSC_5136.jpg', 'photos/Silhouette.jpg', 'photos/IMG_8324.jpg', 'photos/IMG_0442.jpg'];
+    //      console.log($scope.images);
+    //   });
+
+   const photos = [];
+    var app = angular.module("galleryDataApp", ['angular-lightbox']);
+    app.controller('galleryCtrl', function ($scope, $http) {
+   
+        $scope.images = [];
+        $scope.items = [];
+        $http.get(dataPage)
+       .then(function (response) {
+            $scope.items = response.data.records;
+           //alert($scope.images.length);
+           var photoArray = [];
+         
+           for (var i=0; i<$scope.items.length; i++){
+             var col = $scope.items[i];
+            // console.log(col.columns.length);
+              for(var p=0; p < col.columns.length; p++){
+               //console.log(col.columns[p].path);
+               $scope.images.push(col.columns[p].path);
+              }
+           }
+           //console.log($scope.images);
+    
+      });
+
+   }); // end $http
+
+
+
+  // var app = angular.module("galleryDataApp", []);
+  // app.controller('galleryCtrl', function ($scope, $http) {
+  //     $scope.items = [];
+  //     $http.get(dataPage)
+  //    .then(function (response) {
+  //         $scope.items = response.data.records;
+  //    });
+
+  // }); // end $http
+  
+
+
+  
 
 
 </script>
