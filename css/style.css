@@ -92,7 +92,7 @@ body {
     z-index: 20;
     gap: 2em;
     position: fixed;
-    inset: 0 0 0 60%;
+    inset: 0 0 0 50%;
     flex-direction: column;
     padding: min(30vh, 10rem) 2em;
     transform: translateX(100%);
@@ -103,6 +103,9 @@ body {
   .primary-navigation a > span[aria-hidden] {
     display: none;
   }
+}
+.primary-navigation li {
+  padding-left: 1em;
 }
 .primary-navigation li a {
   font-size: 1.2em;
@@ -115,6 +118,10 @@ body {
   font-weight: 700;
   -webkit-margin-end: 0.5em;
           margin-inline-end: 0.5em;
+}
+.primary-navigation li a:hover, .primary-navigation li a:hover span, .primary-navigation li a:focus {
+  transition: color 0.8s;
+  color: #c29a56;
 }
 
 .welcomeContainer {
@@ -151,6 +158,11 @@ body {
     margin-left: -2.5rem;
   }
 }
+@media (min-width: 35em) and (max-width: 55em) {
+  .welcomeContainer .welcome {
+    font-size: 4.5rem;
+  }
+}
 .welcomeContainer .welcome span {
   color: #c29a56;
   text-shadow: 2px 2px 5px #343434;
@@ -161,6 +173,11 @@ body {
 @media (max-width: 35em) {
   .welcomeContainer .welcome span {
     font-size: 5.5rem;
+  }
+}
+@media (min-width: 35em) and (max-width: 55em) {
+  .welcomeContainer .welcome span {
+    font-size: 4.8rem;
   }
 }
 .welcomeContainer .welcomeTitle {
@@ -175,6 +192,11 @@ body {
 @media (max-width: 35em) {
   .welcomeContainer .welcomeTitle {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 35em) and (max-width: 55em) {
+  .welcomeContainer .welcomeTitle {
+    font-size: 1.8rem;
   }
 }
 .welcomeContainer .welcomeDesc {
@@ -221,6 +243,11 @@ body {
 @media (max-width: 35em) {
   .welcomeContainer .welcomeDesc .singleAnimation h5 {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 35em) and (max-width: 55em) {
+  .welcomeContainer .welcomeDesc .singleAnimation h5 {
+    font-size: 0.9rem;
   }
 }
 
